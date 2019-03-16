@@ -1,0 +1,34 @@
+#include <iostream>
+#include <conio.h>
+
+using namespace std;
+
+int main()
+
+{
+	double a;
+	double b;
+	double c;
+	double d;
+	double e;
+	double f;
+
+	cout << "This program will show the interest.";
+	cin.ignore();
+	cout << "Enter the balance that is shown on the bill.\n";
+	cin >> a;
+	cout << "Enter the amount of the payment that has been made.\n";
+	cin >> b;
+	cout << "Enter the number of days in the billing cycle.\n";
+	cin >> c;
+	cout << "Enter the amount of days payment is made before the billing cycle.\n";
+	cin >> d;
+
+	e = ((a*c)-(b*d))/c;
+	f = e*0.0152;
+
+	cout << "The amount of lolis in your place is: " << f << endl;
+
+	_getch();
+	return 0;
+}

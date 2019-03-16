@@ -1,0 +1,35 @@
+#include <iostream>
+#include <conio.h>
+
+using namespace std;
+
+int main()
+
+{
+	int a;
+	int b;
+	int c;
+	int d;
+	float e;
+	float f;
+
+	cout << "This program will show how many tickets are sold and their total amount.";
+	cin.ignore();
+	cout << "What is the amount of box tickets sold?";
+	cin >> a;
+	cout << "What is the amount of sideline tickets sold?";
+	cin >> b;
+	cout << "What is the amount of premium tickets sold?";
+	cin >> c;
+	cout << "What is the amount of general admission tickets sold?";
+	cin >> d;
+
+	e = a+b+c+d;
+	f = (a*25)+(b*50)+(c*100)+(d*250);
+
+	cout << "Number of tickets sold: " << e << endl;
+	cout << "Total amount of tickets sold: " << f << endl;
+
+	_getch();
+	return 0;
+}
